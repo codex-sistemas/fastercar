@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FasterCar Admin</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- MENU -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <img src="./assets/images/logo.png" alt="FasterCar">
+
+                <h1>FasterCar</h1>
+
+                <span>Administração</span>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <button class="menu-item active" data-screen="dashboard">
+                    Dashboard
+                </button>
+
+                <button class="menu-item" data-screen="drivers">
+                    Motoristas
+                </button>
+
+                <button class="menu-item" data-screen="vehicles">
+                    Veículos
+                </button>
+
+                <button class="menu-item" data-screen="rides">
+                    Corridas
+                </button>
+
+                <button class="menu-item" data-screen="passes">
+                    Passes
+                </button>
+
+                <button class="menu-item" data-screen="passengers">
+                    Passageiros
+                </button>
+
+                <button class="menu-item" data-screen="payments">
+                    Pagamentos
+                </button>
+
+            </nav>
+
+
+            <div class="sidebar-footer">
+
+                <button id="logout-button" class="logout-button">
+                    Sair
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h2 id="page-title">
+                        Dashboard
+                    </h2>
+
+                    <p id="page-description">
+                        Visão geral do FasterCar
+                    </p>
+
+                </div>
+
+
+                <div class="admin-user">
+
+                    <span id="admin-name">
+                        Administrador
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- DASHBOARD -->
+
+            <section id="screen-dashboard" class="screen active">
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <span class="card-label">
+                            Motoristas pendentes
+                        </span>
+
+                        <strong id="pending-drivers" class="card-value">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <span class="card-label">
+                            Veículos pendentes
+                        </span>
+
+                        <strong id="pending-vehicles" class="card-value">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <span class="card-label">
+                            Corridas
+                        </span>
+
+                        <strong id="total-rides" class="card-value">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <span class="card-label">
+                            Passes ativos
+                        </span>
+
+                        <strong id="active-passes" class="card-value">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Cadastros aguardando aprovação
+                        </h3>
+
+                    </div>
+
+                    <div id="dashboard-drivers" class="driver-list">
+
+                        <div class="empty-message">
+                            Nenhum cadastro pendente.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- MOTORISTAS -->
+
+            <section id="screen-drivers" class="screen">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>
+                                Motoristas
+                            </h3>
+
+                            <p>
+                                Avalie os cadastros dos motoristas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="drivers-list" class="driver-list">
+
+                        <div class="empty-message">
+                            Carregando...
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- VEÍCULOS -->
+
+            <section id="screen-vehicles" class="screen">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Veículos
+                        </h3>
+
+                    </div>
+
+                    <div class="empty-message">
+                        Área de veículos.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CORRIDAS -->
+
+            <section id="screen-rides" class="screen">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Corridas
+                        </h3>
+
+                    </div>
+
+                    <div class="empty-message">
+                        Área de corridas.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PASSES -->
+
+            <section id="screen-passes" class="screen">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Passes
+                        </h3>
+
+                    </div>
+
+                    <div class="empty-message">
+                        Área de passes.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PASSAGEIROS -->
+
+            <section id="screen-passengers" class="screen">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Passageiros
+                        </h3>
+
+                    </div>
+
+                    <div class="empty-message">
+                        Área de passageiros.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PAGAMENTOS -->
+
+            <section id="screen-payments" class="screen">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Pagamentos
+                        </h3>
+
+                    </div>
+
+                    <div class="empty-message">
+                        Área de pagamentos.
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script type="module" src="./scripts/admin.js"></script>
+
+</body>
+
+</html>
