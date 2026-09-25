@@ -1,0 +1,39 @@
+<app-column style="
+        background-color: var(--color-background);
+        color: var(--color-text);
+        gap: 0;
+    ">
+
+    <app-header></app-header>
+
+
+    <app-column class="scroll-y-on" style="
+            flex: 1;
+            padding: 2rem;
+            gap: 1rem;
+            align-items: center;
+        " onload="APP.actions.loadItems(this)">
+
+        <h1 style="
+                margin: 0;
+                font-size: 2.5rem;
+                color: var(--color-primary);
+                text-align: center;
+            ">
+            Items
+        </h1>
+
+        <span style="
+                font-size: 1.3rem;
+                text-align: center;
+                color: var(--color-text);
+            ">
+            ...
+        </span>
+
+    </app-column>
+
+
+    <app-nav-bar active="itens"></app-nav-bar>
+
+</app-column>

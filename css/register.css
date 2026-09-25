@@ -1,0 +1,14 @@
+.icon {
+    background-color: var(--color-primary);
+    border-radius: 10rem;
+    width: auto;
+    padding: 0.5rem;
+    height: 100%;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+input,
+select {
+    width: 100%;
+}

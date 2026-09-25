@@ -1,0 +1,19 @@
+{
+    "name": "FasterCar Motorista",
+    "short_name": "FasterCar Motorista",
+    "description": "FasterCar Motorista - Corridas sem espera.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0039bd",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "./assets/images/logo_com_bg.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

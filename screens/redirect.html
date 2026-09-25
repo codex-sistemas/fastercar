@@ -1,0 +1,44 @@
+<app-column class="user-type-screen">
+
+    <!-- Logo -->
+
+    <app-row class="user-type-logo">
+
+        <img src="./assets/images/logo.png" alt="FasterCar">
+
+    </app-row>
+
+
+    <!-- Título -->
+
+    <app-column class="user-type-title">
+
+        <h1>FasterCar</h1>
+
+        <p>
+            Como você deseja utilizar o FasterCar?
+        </p>
+
+    </app-column>
+
+
+    <!-- Opções -->
+
+    <app-column class="user-type-options">
+
+        <!-- Passageiro -->
+
+        <button class="user-type-button" onclick="APP.actions.selectUserType('passenger')">
+            Passageiro
+        </button>
+
+
+        <!-- Motorista -->
+
+        <button class="user-type-button" onclick="APP.actions.selectUserType('driver')">
+            Motorista
+        </button>
+
+    </app-column>
+
+</app-column>

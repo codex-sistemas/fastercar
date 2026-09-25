@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    touch-action: none;
+    user-select: none;
+}
+
+/* Splash Screen */
+.app-container #splash {
+    background-color: var(--color-background);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.app-container #splash img {
+    width: 35%;
+    /* border-radius: 100rem;
+    background-color: white; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: var(--color-background-window);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: var(--width-mobile);
+    height: 100svh;
+    background-color: var(--color-primary);
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+/* Scroll */
+.scroll-y-on {
+    justify-content: flex-start;
+    overflow-y: auto;
+    min-height: 0
+}
+
+.scroll-x-on {
+    justify-content: flex-start;
+    overflow-x: auto;
+    min-width: 0
+}
+
+/* Permite que os elementos solo em app-row, preencha todo o app-row */
+/* app-row>* {
+    width: 100%;
+    box-sizing: border-box;
+} */
+
+/* Impedir arrastar imagem pelo web app */
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+/* padrão de tamanho para mobile */
+button,
+input,
+textarea,
+select {
+    font-size: 1.5rem;
+    min-height: 2rem;
+    max-width: 100%;
+}
+
+/* padrão de propriedades para mobile */
+button,
+label,
+span,
+input,
+textarea,
+select,
+option {
+    font-size: 1.5rem;
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    resize: none;
+    color: var(--color-text);
+}
+
+
+label {
+    text-align: center;
+}
+
+textarea,
+select,
+option {
+    font-size: 1.25rem;
+}
+
+button:active {
+    background-color: var(--color-secondary);
+}

@@ -1,0 +1,10 @@
+.icon {
+    background-color: var(--color-primary);
+    border-radius: 10rem;
+    width: auto;
+    padding: 0.5rem;
+    height: 75%;
+    margin: auto;
+    white-space: nowrap;
+    font-size: 2rem;
+}
